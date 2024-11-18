@@ -1,0 +1,265 @@
+body {
+    background-image: url('https://media.istockphoto.com/id/1414932381/vector/zodiac-circle-on-a-dark-blue-background-of-the-space-astrology-cosmogram-twelve-signs-of-the.jpg?s=2048x2048&w=is&k=20&c=Z6DfZe8fNY25A0yi62ioJemJo-WLkTgrgtIuPXb7pAk=');
+    background-size: cover;
+    background-position: center 14%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1; 
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+  }
+
+header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+header p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Corpo */
+
+.container {
+    margin-top: 125px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    font-family: inherit; 
+    font-size: 1.2em; 
+    line-height: 1.6; 
+    transition: background-color 1.0s ease, transform 1.0s ease;
+}
+
+.container:hover {
+    backdrop-filter: blur(9px);
+}
+
+.container h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.container h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+}
+
+.container p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fdfcfc;
+    padding: 10px 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+.zodiac-sign{
+    margin-top: 60px;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fdfcfc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fdfcfc;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    box-shadow: 0 4px 8px rgba(78, 88, 177, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    margin-top: -6px;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    border-color: #a394b1;
+    box-shadow: 0 0 8px rgba(163, 148, 177, 0.5);
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    box-shadow: 0 2px 4px rgba(78, 88, 177, 0.2);
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.01);
+    color: #fff;
+}
+
+/* Rodapé */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.0em;
+    color: #fffdfd;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsividade para celular 480px */
+
+@media (max-width: 480px) {
+    body {
+        background-size: cover;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 1.2rem;
+    }
+
+    .form-control {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    header p {
+        font-size: 1.3rem;
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 2.5);
+    }
+}
+
+/* Responsividade para ipad 800 x 1280 */
+
+@media (min-width: 800px) and (max-width: 1280px) {
+    body {
+        background-size: cover; 
+    }
+
+    header {
+        margin-bottom: 200px;
+    }
+
+    header p {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .container p {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 1.6rem;
+    }
+
+    .form-control {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 1.6rem;
+        padding: 12px 24px;
+    }
+
+    footer {
+        font-size: 1.3em;
+    }
+}
